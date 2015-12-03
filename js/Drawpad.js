@@ -1,8 +1,16 @@
 'use strict';
 
+/*
+ * Behaviour for the drawpad component. The reason this is separate from the view is that a React component class behaves very differently from a regular ES6 class.
+ * Ie. you don't have 'this'.
+ */
+
 import Point from "./Point";
 import simplify from "simplify-js";
 import d3 from "d3";
+import State from './State';
+
+let state=State.instance;
 
 class Drawpad{
 	 constructor() {
@@ -19,7 +27,7 @@ class Drawpad{
     //add starting point to svg-path
     this.pathD="M"+newPoint.x+","+newPoint.y;//path Move operation
     this.path=d3.select("#drawpad").append("path").attr("d", this.pathD);
-    
+    this.path.attr("style", "stroke:" + state.strokeColor);  
     //add new point to array of points, used to reduce the number of points after finishing the line
     this.points=[];
     this.points.push(newPoint);

@@ -28,6 +28,7 @@
     "d3": "^3.5.9",
     "electron-prebuilt": "^0.28.3",
     "react": "^0.13.3",
+    "react-color-picker": "^2.1.9",
     "simplify-js": "^1.2.1"
   }
 }

@@ -1,24 +1,153 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node',
-1 verbose cli   '/usr/bin/npm',
-1 verbose cli   'install',
-1 verbose cli   'simplify-js',
-1 verbose cli   '--save' ]
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', '-g', 'styl' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.40
-4 error Failed to parse json
-4 error Unexpected token }
-5 error File: /workspaces/electron/electron-react-tutorial/package.json
-6 error Failed to parse package.json data.
-6 error package.json must be actual JSON, not just JavaScript.
-6 error
-6 error This is not a bug in npm.
-6 error Tell the package author to fix their package.json file. JSON.parse
-7 error System Linux 3.10.0-229.20.1.el7.x86_64
-8 error command "/usr/bin/node" "/usr/bin/npm" "install" "simplify-js" "--save"
-9 error cwd /workspaces/electron/electron-react-tutorial
-10 error node -v v0.10.40
-11 error npm -v 1.4.28
-12 error file /workspaces/electron/electron-react-tutorial/package.json
-13 error code EJSONPARSE
-14 verbose exit [ 1, true ]
+4 verbose cache add [ 'styl', null ]
+5 verbose cache add name=undefined spec="styl" args=["styl",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'styl',
+6 verbose parsed url   path: 'styl',
+6 verbose parsed url   href: 'styl' }
+7 silly lockFile c0855232-styl styl
+8 verbose lock styl /home/sander/.npm/c0855232-styl.lock
+9 silly lockFile c0855232-styl styl
+10 silly lockFile c0855232-styl styl
+11 verbose addNamed [ 'styl', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile d9be92f8-styl styl@
+14 verbose lock styl@ /home/sander/.npm/d9be92f8-styl.lock
+15 silly addNameRange { name: 'styl', range: '*', hasData: false }
+16 verbose request where is /styl
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 7af8d1e5f25a0814
+19 verbose url raw /styl
+20 verbose url resolving [ 'https://registry.npmjs.org/', './styl' ]
+21 verbose url resolved https://registry.npmjs.org/styl
+22 verbose request where is https://registry.npmjs.org/styl
+23 info trying registry request attempt 1 at 14:55:17
+24 http GET https://registry.npmjs.org/styl
+25 http 200 https://registry.npmjs.org/styl
+26 silly registry.get cb [ 200,
+26 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"9QC0I6Q57BCJZBWIPWWPW18CI"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     'content-length': '14506',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     date: 'Sat, 21 Nov 2015 19:55:18 GMT',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     connection: 'keep-alive',
+26 silly registry.get     'x-served-by': 'cache-ams4136-AMS',
+26 silly registry.get     'x-cache': 'HIT',
+26 silly registry.get     'x-cache-hits': '1',
+26 silly registry.get     'x-timer': 'S1448135717.917441,VS0,VE748',
+26 silly registry.get     vary: 'Accept' } ]
+27 silly addNameRange number 2 { name: 'styl', range: '*', hasData: true }
+28 silly addNameRange versions [ 'styl',
+28 silly addNameRange   [ '0.0.1',
+28 silly addNameRange     '0.1.0',
+28 silly addNameRange     '0.2.0',
+28 silly addNameRange     '0.2.1',
+28 silly addNameRange     '0.2.2',
+28 silly addNameRange     '0.2.3',
+28 silly addNameRange     '0.2.4',
+28 silly addNameRange     '0.2.5',
+28 silly addNameRange     '0.2.6',
+28 silly addNameRange     '0.2.7',
+28 silly addNameRange     '0.2.8',
+28 silly addNameRange     '0.2.9' ] ]
+29 verbose addNamed [ 'styl', '0.2.9' ]
+30 verbose addNamed [ '0.2.9', '0.2.9' ]
+31 silly lockFile 71e81ccf-styl-0-2-9 styl@0.2.9
+32 verbose lock styl@0.2.9 /home/sander/.npm/71e81ccf-styl-0-2-9.lock
+33 silly lockFile e76bf2a4-ry-npmjs-org-styl-styl-0-2-9-tgz https://registry.npmjs.org/styl/-/styl-0.2.9.tgz
+34 verbose lock https://registry.npmjs.org/styl/-/styl-0.2.9.tgz /home/sander/.npm/e76bf2a4-ry-npmjs-org-styl-styl-0-2-9-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/styl/-/styl-0.2.9.tgz',
+35 verbose addRemoteTarball   '392a1acecf126e7ed219ec9468df8ea830a9d2d7' ]
+36 info retry fetch attempt 1 at 14:55:18
+37 verbose fetch to= /tmp/npm-6371-snCn9fcA/registry.npmjs.org/styl/-/styl-0.2.9.tgz
+38 http GET https://registry.npmjs.org/styl/-/styl-0.2.9.tgz
+39 http 200 https://registry.npmjs.org/styl/-/styl-0.2.9.tgz
+40 silly lockFile e76bf2a4-ry-npmjs-org-styl-styl-0-2-9-tgz https://registry.npmjs.org/styl/-/styl-0.2.9.tgz
+41 silly lockFile e76bf2a4-ry-npmjs-org-styl-styl-0-2-9-tgz https://registry.npmjs.org/styl/-/styl-0.2.9.tgz
+42 silly lockFile 71e81ccf-styl-0-2-9 styl@0.2.9
+43 silly lockFile 71e81ccf-styl-0-2-9 styl@0.2.9
+44 silly lockFile d9be92f8-styl styl@
+45 silly lockFile d9be92f8-styl styl@
+46 silly resolved [ { name: 'styl',
+46 silly resolved     description: 'CSS pre-processor built on Rework',
+46 silly resolved     version: '0.2.9',
+46 silly resolved     keywords: [ 'css', 'stylus', 'preprocessor', 'style' ],
+46 silly resolved     dependencies:
+46 silly resolved      { 'css-whitespace': '1.1.1',
+46 silly resolved        debug: '*',
+46 silly resolved        rework: '0.18.3',
+46 silly resolved        commander: '1.1.1',
+46 silly resolved        stdin: '0.0.1',
+46 silly resolved        'rework-mixins': '1.1.1' },
+46 silly resolved     devDependencies: { should: '~1.2.2', mocha: '~1.9.0' },
+46 silly resolved     bin: { styl: 'bin/styl' },
+46 silly resolved     repository: { type: 'git', url: 'https://github.com/tj/styl.git' },
+46 silly resolved     gitHead: 'b987d4b1a2437bed398c34b2e62845468f638431',
+46 silly resolved     bugs: { url: 'https://github.com/tj/styl/issues' },
+46 silly resolved     homepage: 'https://github.com/tj/styl',
+46 silly resolved     _id: 'styl@0.2.9',
+46 silly resolved     scripts: {},
+46 silly resolved     _shasum: '392a1acecf126e7ed219ec9468df8ea830a9d2d7',
+46 silly resolved     _from: 'styl@',
+46 silly resolved     _npmVersion: '2.5.1',
+46 silly resolved     _nodeVersion: '0.12.0',
+46 silly resolved     _npmUser: { name: 'mattmueller', email: 'mattmuelle@gmail.com' },
+46 silly resolved     maintainers: [ [Object], [Object] ],
+46 silly resolved     dist:
+46 silly resolved      { shasum: '392a1acecf126e7ed219ec9468df8ea830a9d2d7',
+46 silly resolved        tarball: 'http://registry.npmjs.org/styl/-/styl-0.2.9.tgz' },
+46 silly resolved     directories: {},
+46 silly resolved     _resolved: 'https://registry.npmjs.org/styl/-/styl-0.2.9.tgz' } ]
+47 info install styl@0.2.9 into /usr/lib
+48 info installOne styl@0.2.9
+49 verbose lib/node_modules/styl unbuild
+50 verbose tar unpack /home/sander/.npm/styl/0.2.9/package.tgz
+51 silly lockFile 5b1849c9-tar-usr-lib-node-modules-styl tar:///usr/lib/node_modules/styl
+52 verbose lock tar:///usr/lib/node_modules/styl /home/sander/.npm/5b1849c9-tar-usr-lib-node-modules-styl.lock
+53 silly lockFile 1a24ce1f-ander-npm-styl-0-2-9-package-tgz tar:///home/sander/.npm/styl/0.2.9/package.tgz
+54 verbose lock tar:///home/sander/.npm/styl/0.2.9/package.tgz /home/sander/.npm/1a24ce1f-ander-npm-styl-0-2-9-package-tgz.lock
+55 silly gunzTarPerm modes [ '775', '664' ]
+56 error Error: EACCES, mkdir '/usr/lib/node_modules/styl'
+56 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/styl']
+56 error   errno: 3,
+56 error   code: 'EACCES',
+56 error   path: '/usr/lib/node_modules/styl',
+56 error   fstream_type: 'Directory',
+56 error   fstream_path: '/usr/lib/node_modules/styl',
+56 error   fstream_class: 'DirWriter',
+56 error   fstream_stack:
+56 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+56 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+56 error      'Object.oncomplete (fs.js:108:15)' ] }
+57 error Please try running this command again as root/Administrator.
+58 error System Linux 3.10.0-229.20.1.el7.x86_64
+59 error command "/usr/bin/node" "/usr/bin/npm" "install" "-g" "styl"
+60 error cwd /workspaces/electron/drawpad
+61 error node -v v0.10.40
+62 error npm -v 1.4.28
+63 error path /usr/lib/node_modules/styl
+64 error fstream_path /usr/lib/node_modules/styl
+65 error fstream_type Directory
+66 error fstream_class DirWriter
+67 error code EACCES
+68 error errno 3
+69 error stack Error: EACCES, mkdir '/usr/lib/node_modules/styl'
+70 error fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+70 error fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+70 error fstream_stack Object.oncomplete (fs.js:108:15)
+71 verbose exit [ 3, true ]

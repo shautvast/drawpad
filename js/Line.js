@@ -7,8 +7,6 @@ class Line{
 		this.start=startPoint;
 		this.end=endPoint;
 	}
-	
-	
 }
 
 export default Line;
